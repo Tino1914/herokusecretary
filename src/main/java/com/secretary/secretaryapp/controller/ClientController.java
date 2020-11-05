@@ -28,7 +28,7 @@ public class ClientController {
 
     @GetMapping("/all")
     public @ResponseBody List<Client> getAllClients() {
-       return (List<Client>) clientRepository.findAll();
+       return clientRepository.findAll();
 //        try {
 //            List<Client> users = new ArrayList<Client>();
 //            clientRepository.findAll().forEach(users::add);
