@@ -1,4 +1,3 @@
-com\secretary\secretaryapp\email\EmailService.class
 com\secretary\secretaryapp\SecretaryAppApplication.class
 com\secretary\secretaryapp\controller\ClientController.class
 com\secretary\secretaryapp\repository\ClientRepository.class
