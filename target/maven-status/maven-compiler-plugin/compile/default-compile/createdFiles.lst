@@ -1,7 +1,0 @@
-com\secretary\secretaryapp\SecretaryAppApplication.class
-com\secretary\secretaryapp\controller\ClientController.class
-com\secretary\secretaryapp\repository\ClientRepository.class
-com\secretary\secretaryapp\service\ClientService.class
-com\secretary\secretaryapp\dao\ClientDao.class
-com\secretary\secretaryapp\model\Client.class
-com\secretary\secretaryapp\dao\ClientDao$1.class

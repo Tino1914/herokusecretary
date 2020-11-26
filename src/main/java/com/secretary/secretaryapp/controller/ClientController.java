@@ -97,13 +97,13 @@ public class ClientController {
     }
 
     @PostMapping("/sendmail/{email}")
-    public ResponseEntity sendmail(@PathVariable("email") String email) {
+    public ResponseEntity<HttpStatus> sendmail(@PathVariable("email") String email) {
 
         try{
             emailService.sendMail(email, "Parking Spot", "Your Parking spot is...");
-            return new ResponseEntity<>("Email Sent!", HttpStatus.OK);
+            return new ResponseEntity<>(HttpStatus.OK);
         }catch(MailSendException s){
-            return new ResponseEntity<>("Error, while sending the email", HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
